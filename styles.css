@@ -34,7 +34,7 @@ p {
 }
 
 header {
-  background-color: #4caf50;
+  background-color: #af4c70;
   color: white;
   font-size: small;
   align-items: center;
@@ -53,6 +53,7 @@ header h1 {
 nav {
   width: 100%;
   text-align: center;
+  flex-direction: column;
 }
 
 nav ul {
@@ -61,12 +62,12 @@ nav ul {
   padding: 1rem 0 0 0;
 }
 nav ul li {
-  display: inline-block;
   margin: 0 1rem;
 }
 li a {
   color: white;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .artedigital {
@@ -104,6 +105,12 @@ li a {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .galeria {
