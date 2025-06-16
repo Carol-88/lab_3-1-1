@@ -3,3 +3,155 @@
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  background: #f9fafb;
+  color: #222;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  font-size: small;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem 0 0 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.artedigital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.artedigital img {
+  max-width: 200px;
+  height: 200px;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.galeria img {
+  width: 90vw;
+  max-width: 350px;
+  height: 325x;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  object-fit: cover;
+  margin: 0.5rem 0;
+}
+
+/* --- Desktop (min-width: 900px) --- */
+@media (min-width: 900px) {
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria article {
+    flex: 1 1 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+  }
+
+  .galeria img {
+    width: 220px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .header-content .logo {
+    max-width: 100px;
+    height: auto;
+  }
+  .header-content h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+.logo {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .logo {
+    display: block;
+    max-width: 150px;
+    height: auto;
+  }
+}
